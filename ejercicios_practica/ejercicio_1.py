@@ -27,6 +27,15 @@ if __name__ == '__main__':
     for i in x:
         y.append(i**2)
 
+    fig = plt.figure()
+    ax=fig.add_subplot()
+    ax.plot(x,y)
+    ax.set_facecolor("whitesmoke")
+    ax.set_title("Grafico 1")
+    ax.set_ylabel( "Y")
+    ax.set_xlabel("X")
+    plt.show()
+
     # Alumno: Crear una "figura" y crear un "ax" con add_subplot
     # Graficar el "line plot" de "y" en función de "x"
 

@@ -33,5 +33,15 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.scatter(x,y, color="r")
+    ax.set_facecolor("whitesmoke")
+    ax.set_title("Funcion Tanh")
+    ax.grid("solid")
+    ax.set_xlabel("Eje X")
+    ax.set_ylabel("Tanh")
+    ax.legend()
+    plt.show()
 
     print("terminamos")

@@ -35,6 +35,16 @@ if __name__ == '__main__':
     for i in x:
         y2.append(i**3)
 
+    fig =plt.figure()
+    ax=fig.add_subplot()
+    ax.plot(x, y1, color="r",marker=">",label="y1(x)")
+    ax.plot(x, y2, color="g",marker="+", label="y2(X)")
+    ax.set_facecolor("whitesmoke")
+    ax.set_title("Varias funciones")
+    ax.set_xlabel("Eje X")
+    ax.set_ylabel("Eje Y")
+    ax.legend()
+    plt.show()
     # Alumno: Realizar un gráfico que representen las dos funciones
     # Para ello se debe llamar dos veces a "plot" con el mismo "ax"
 
